@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123d32">
+  <title>GiveHope | A Little Help, A Little Hope</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8f4;
+      color: #24342d;
+      line-height: 1.6;
+    }
+    header {
+      background: #123d32;
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 25px; font-weight: bold; }
+    .logo span { color: #a9dfb6; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 75px 8%;
+      background: linear-gradient(120deg,#123d32,#28634c);
+      color: white;
+    }
+    .hero h1 {
+      font-size: clamp(36px,7vw,58px);
+      line-height: 1.12;
+      max-width: 650px;
+      margin-bottom: 20px;
+    }
+    .hero p { max-width: 560px; color: #e0eee5; }
+    .btn {
+      display: inline-block;
+      background: #b7e3bf;
+      color: #123d32;
+      padding: 13px 23px;
+      border: none;
+      border-radius: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+    section { padding: 55px 8%; }
+    .section-title {
+      font-size: 30px;
+      color: #174b3a;
+      margin-bottom: 18px;
+    }
+    .story, .donate-card, .transparency {
+      background: white;
+      border-radius: 13px;
+      padding: 27px;
+      box-shadow: 0 5px 25px #163c2510;
+    }
+    .story p, .transparency p { margin-top: 12px; }
+    .donate-card { max-width: 600px; }
+    label { display: block; font-weight: bold; margin: 17px 0 7px; }
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d5ded7;
+      border-radius: 7px;
+      font-size: 16px;
+      background: #fff;
+    }
+    .notice {
+      background: #edf5ed;
+      padding: 15px;
+      border-left: 4px solid #43865a;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .btn-submit {
+      width: 100%;
+      background: #174b3a;
+      color: white;
+      padding: 15px;
+      border: 0;
+      border-radius: 7px;
+      font-size: 16px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    footer {
+      background: #123d32;
+      color: #dce9df;
+      text-align: center;
+      padding: 30px 8%;
+      font-size: 13px;
+    }
+    @media(max-width:600px) {
+      header { padding: 17px 5%; }
+      nav a { margin-left: 8px; font-size: 12px; }
+      section { padding: 40px 6%; }
+      .hero { padding: 60px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Give<span>Hope.</span></div>
+  <nav>
+    <a href="#story">Our Story</a>
+    <a href="#donate">Donate</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>A little help can bring a little hope.</h1>
+    <p>
+      Every person deserves dignity, care and the chance
+      to live with safety. Together, we can make a difference.
+    </p>
+    <a class="btn" href="#donate">Support this cause</a>
+  </div>
+
+  <section id="story">
+    <h2 class="section-title">A Story That Needs Our Support</h2>
+    <div class="story">
+      <h3>Helping someone in need</h3>
+      <p>
+        A woman in our community has been left without
+        family support and is currently facing difficult
+        living circumstances.
+      </p>
+      <p>
+        She needs essential supplies, food, clothing,
+        hygiene products, protection from mosquitoes
+        and help finding safer accommodation.
+      </p>
+      <p>
+        This initiative aims to provide practical support
+        while respecting her privacy and dignity.
+      </p>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h2 class="section-title">Make a Contribution</h2>
+    <div class="donate-card">
+      <p>
+        Every contribution matters. You can choose
+        the amount you would like to give.
+      </p>
+
+      <form id="donationForm">
+        <label for="amount">Your contribution (₹)</label>
+        <input id="amount" type="number" min="1"
+          step="1" placeholder="Enter your amount" required>
+
+        <label for="name">Your name (optional)</label>
+        <input id="name" type="text"
+          placeholder="Enter your name">
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" rows="3"
+          placeholder="Write a message of support"></textarea>
+
+        <div class="notice">
+          This is currently a website preview.
+          Real payments are not enabled yet.
+          No money will be collected through this form.
+        </div>
+
+        <button class="btn-submit" type="submit">
+          Continue
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Transparency Matters</h2>
+    <div class="transparency">
+      <p>
+        Contributions will be managed under adult
+        supervision, with teacher approval required
+        before any withdrawal.
+      </p>
+      <p>
+        Records of donations, approved withdrawals
+        and expenses will be maintained for accountability.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">Give<span>Hope.</span></div>
+  <p>Helping people. Sharing hope. Respecting dignity.</p>
+  <p style="margin-top:12px">GiveHope — Community Support Initiative</p>
+  <p>© 2026 GiveHope. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("donationForm").addEventListener(
+    "submit", function(event) {
+      event.preventDefault();
+      alert("Thank you for your support! Real donations are not enabled yet.");
+    }
+  );
+</script>
+
+</body>
+</html>
